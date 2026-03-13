@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+    color: #f8fafc;
+    min-height: 100vh;
+}
+
+.main-container {
+    padding: 30px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 30px 20px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.header h1 {
+    font-size: 2.7rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #38bdf8, #818cf8, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.05rem;
+    color: #cbd5e1;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-bottom: 35px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 22px;
+    padding: 25px 20px;
+    text-align: center;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(56, 189, 248, 0.18);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+.card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #cbd5e1;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #38bdf8;
+}
+
+.system-info {
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 22px;
+    padding: 28px 24px;
+    margin-bottom: 35px;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.system-info h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #f8fafc;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.info-grid div {
+    background: rgba(15, 23, 42, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 15px 16px;
+    color: #e2e8f0;
+    transition: transform 0.2s ease, border 0.2s ease;
+}
+
+.info-grid div:hover {
+    transform: scale(1.02);
+    border: 1px solid rgba(129, 140, 248, 0.30);
+}
+
+.info-grid strong {
+    color: #93c5fd;
+}
+
+.graphs-container {
+    display: grid;
+    gap: 28px;
+}
+
+.graph-box {
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 22px;
+    padding: 18px;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.graph-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(99, 102, 241, 0.16);
+}
+
+.js-plotly-plot,
+.plot-container,
+.svg-container {
+    border-radius: 18px !important;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding: 18px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .card h2 {
+        font-size: 1.6rem;
+    }
+
+    .system-info h2 {
+        font-size: 1.3rem;
+    }
+}

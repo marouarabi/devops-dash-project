@@ -1,0 +1,32 @@
+# Environnements virtuels
+venv/
+.venv/
+app/venv/
+app/.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VS Code
+.vscode/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Secrets / variables sensibles
+.env
+*.pem
+*.key
+terraform.tfvars
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Logs
+*.log
